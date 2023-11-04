@@ -16,7 +16,7 @@
             <div class="navbar-nav">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                 <a class="nav-link" href="#">Featuressl</a>
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#">Pricingg</a>
                 <a class="nav-link disabled">Disabled</a>
             </div>
             </div>
