@@ -1,0 +1,18 @@
+footer a:first-child {
+  font-weight: 700;
+}
+footer ul {
+  margin-top: 10px;
+  padding-left: 0;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+footer .sub-footer_container_ul {
+  display: flex;
+  justify-content: space-between;
+}
