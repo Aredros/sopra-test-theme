@@ -1,0 +1,175 @@
+$Insights-blue-Def: rgb(0, 255, 209);
+$Insights-blue-Def-gradient: linear-gradient(
+  160deg,
+  rgba(0, 255, 209, 1) 0%,
+  rgba(29, 187, 255, 1) 100%
+);
+
+$Insights-blue-2: rgb(153, 136, 255);
+$Insights-blue-2-gradient: linear-gradient(
+  160deg,
+  rgba(153, 136, 255, 1) 0%,
+  rgba(142, 248, 255, 1) 100%
+);
+
+$Insights-orange: rgb(255, 184, 119);
+$Insights-orange-gradient: linear-gradient(
+  160deg,
+  rgba(255, 184, 119, 1) 0%,
+  rgba(255, 122, 154, 1) 100%
+);
+
+$Insights-green: rgb(62, 255, 174);
+$Insights-green-gradient: linear-gradient(
+  160deg,
+  rgba(62, 255, 174, 1) 0%,
+  rgba(173, 255, 134, 1) 100%
+);
+
+$Insights-yellow: rgb(255, 206, 161);
+$Insights-yellow-gradient: linear-gradient(
+  160deg,
+  rgba(255, 206, 161, 1) 0%,
+  rgba(255, 230, 0, 1) 100%
+);
+
+/**********************************************************************************************************************************************/
+/*BACKGROUND COLORS*****************************************************************************************************************************/
+/**********************************************************************************************************************************************/
+#sect1-slide1 {
+  background: rgb(255, 84, 193);
+  background: linear-gradient(
+    340deg,
+    rgba(255, 84, 193, 1) 0%,
+    rgba(255, 182, 141, 0.9164040616246498) 50%,
+    rgba(255, 199, 0, 1) 100%
+  );
+}
+#sect1-slide2 {
+  background: rgb(175, 73, 255);
+  background: linear-gradient(
+    325deg,
+    rgba(175, 73, 255, 0.9416141456582633) 0%,
+    rgba(112, 255, 212, 1) 3%,
+    rgba(135, 169, 255, 1) 50%,
+    rgba(175, 73, 255, 1) 100%
+  );
+}
+#section2 {
+  background: rgb(112, 255, 212);
+  background: linear-gradient(
+    160deg,
+    rgba(112, 255, 212, 1) 0%,
+    rgba(135, 169, 255, 1) 50%,
+    rgba(175, 73, 255, 1) 100%
+  );
+}
+#section3 {
+  background: #2e2e2e;
+}
+
+/********Applying colors: ****/
+.blue-2-gradient {
+  background: $Insights-blue-2;
+  background: $Insights-blue-2-gradient;
+}
+.blue-1-gradient {
+  background: $Insights-blue-Def;
+  background: $Insights-blue-Def-gradient;
+}
+.orange-gradient {
+  background: $Insights-orange;
+  background: $Insights-orange-gradient;
+}
+.green-gradient {
+  background: $Insights-green;
+  background: $Insights-green-gradient;
+}
+.yellow-gradient {
+  background: $Insights-yellow;
+  background: $Insights-yellow-gradient;
+}
+
+/**********************************************************************************************************************************************/
+/*FONTS***************************************************************************************************************************************/
+/**********************************************************************************************************************************************/
+@font-face {
+  font-family: "OpenSans";
+  src: url("../../assets/fonts/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BatonTurbo";
+  src: url("../../assets/fonts/BatonTurboWeb-Medium.woff") format("woff");
+  /* strangely It is not working */
+}
+
+body {
+  font-family: "OpenSans", sans-serif;
+}
+
+/**********************************************************************************************************************************************/
+/*MULTICOMPONENT STYLES*****************************************************************************************************************************/
+/**********************************************************************************************************************************************/
+//This class is used to keep the content in a certain width, used in all slides
+.content-container {
+  width: 85%;
+  margin: auto;
+}
+
+//Styles for all the button shown in all sliders - to DISCOVER or EXPLORE
+.button-1 {
+  font-weight: 700;
+  padding: 8px 20px;
+  border: 0px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  &_white {
+    background: white;
+    color: black;
+  }
+  &_black {
+    background: black;
+    color: white;
+  }
+}
+
+///
+///
+
+footer {
+  .sub-menu {
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+  footer {
+    .sub-menu {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 1360px) {
+}
+
+.fp-next {
+  right: 0;
+  border: none;
+  width: 50px;
+  height: 101px;
+  background: url(http://sopratest.local/wp-content/themes/sopratesttheme/assets/images/right.svg)
+    no-repeat;
+  cursor: pointer;
+}
+.fp-prev {
+  right: 0;
+  border: none;
+  width: 50px;
+  height: 101px;
+  background: url(http://sopratest.local/wp-content/themes/sopratesttheme/assets/images/left.svg)
+    no-repeat;
+  cursor: pointer;
+}
